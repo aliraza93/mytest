@@ -17,6 +17,19 @@ Run the following commands:
 - php artisan migrate --seed
 - php artisan serve
 
+Doc to use REST API:
+    To get all websites:
+        - http://mytest.test/api/websites
+
+    To Publish a post:
+        - http://mytest.test/api/post/{website_id}?title=ANother Test&description=My Another Description
+    To Subscribe to a website:
+        - http://mytest.test/api/subscribe/{website_id}?email=anything@test.com
+    To get all posts:
+        - http://mytest.test/api/posts
+    To get all subscribers:
+        - http://mytest.test/api/subscribers
+
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## License

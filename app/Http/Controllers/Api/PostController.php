@@ -31,7 +31,7 @@ class PostController extends Controller
     {
         $request->validate([
             'title' => 'required|string',
-            'description' => 'required|string' 
+            'description' => 'required|string|unique:posts' 
         ]);
         $post               = new Post;
         $post->title        = $request->title;
